@@ -1,0 +1,30 @@
+{
+"name": "veitingarstadur",
+"version": "1.0.0",
+"description": "",
+"main": "index.js",
+"scripts": {
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass-watch": "sass --watch *.scss styles.css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "lint": "stylelint styles.scss ./**/*.scss"
+},
+"repository": {
+    "type": "git",
+    "url": "https://github.com/DanniFV/veitingarstadur-v6.git"
+},
+"keywords": [],
+"author": "",
+"license": "ISC",
+"bugs": {
+    "url": "https://github.com/DanniFV/veitingarstadur-v6.git"
+},
+"homepage": "https://github.com/DanniFV/veitingarstadur-v6.git",
+"devDependencies": {
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.1",
+    "sass": "^1.69.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-sass-guidelines": "^9.0.1"
+}
+}
